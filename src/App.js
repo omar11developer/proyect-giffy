@@ -1,22 +1,15 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
-import getGifts from './services/getGifts';
+import { Link, Route } from "wouter";
 
+import "./App.css";
+import { ListOfGifs } from "./components/ListOfGifs";
 
 function App() {
-  const [gifts, setGifts] = useState([]);
-
-  useEffect(()=>{
-    getGifts({keyword:'morty'}).then(gifts => setGifts(gifts))
-  
-  },[])
-
   return (
     <div className="App-content">
-      <section>
-       {gifts.map( ItemImg => ( 
-        <img src={ItemImg.url} alt='' />
-       ))}
+        <Link to="/gif/morty">Gifs Morty</Link>
+      <section className="items-container">
+        <Route path="/gif/:keyword" component={ListOfGifs} />
+        
       </section>
     </div>
   );
