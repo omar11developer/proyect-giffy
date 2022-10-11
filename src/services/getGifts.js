@@ -1,6 +1,6 @@
 
 
-const apikey = 'zRbLtaug9gSznR5SjuHAJYxe77KBJNm3';
+const apikey = '';
 
 export default function getGifts ({keyword = 'morty'} = {}) {
 
