@@ -5,7 +5,7 @@
 
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 .items-container{
   width: 90%;
@@ -15,4 +15,15 @@
   gap: 20px;
   justify-content: center;
 
+}
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header img{
+  width: 180px;
+  cursor: pointer;
 }

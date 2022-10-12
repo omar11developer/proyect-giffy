@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { Gif } from "./Gif";
 import getGifts from "../services/getGifts";
+import Spinner from "./Spinner";
 
 export const ListOfGifs = ({ params }) => {
   const [loading, setLoading] = useState(false)
@@ -14,7 +15,7 @@ export const ListOfGifs = ({ params }) => {
       setLoading(false)
     });
   }, [keyword]);
-  if (loading) return <i>Cargando...</i>
+  if (loading) return <Spinner/>
   return (
     <Fragment>
       {gifts.map((ItemGif) => (

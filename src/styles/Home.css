@@ -1,0 +1,4 @@
+.optiones{
+    display: flex;
+    flex-direction: column;
+}
