@@ -1,23 +1,11 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, {  Fragment } from "react";
 import { Gif } from "./Gif";
-import getGifts from "../services/getGifts";
-import Spinner from "./Spinner";
+import '../styles/ListOfGifs.css'
+export const ListOfGifs = ({ gifts }) => {
 
-export const ListOfGifs = ({ params }) => {
-  const [loading, setLoading] = useState(false)
-  const [gifts, setGifts] = useState([]);
-  const {keyword} = params;
-  useEffect(() => {
-    setLoading(true)
-    getGifts({ keyword })
-    .then((gifts) => {
-      setGifts(gifts)
-      setLoading(false)
-    });
-  }, [keyword]);
-  if (loading) return <Spinner/>
   return (
     <Fragment>
+      <div className="items-container">
       {gifts.map((ItemGif) => (
         <Gif
           key={ItemGif.id}
@@ -26,6 +14,8 @@ export const ListOfGifs = ({ params }) => {
           id={ItemGif.id}
         />
       ))}
+
+      </div>
     </Fragment>
   );
 };

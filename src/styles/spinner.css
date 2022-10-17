@@ -1,4 +1,10 @@
-
+.Spinner{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .lds-ring {
     display: inline-block;
     position: relative;

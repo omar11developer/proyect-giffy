@@ -12,12 +12,13 @@
     transition: all ease .5s;
     display: flex;
     flex-direction: column;
+    
 }
 .items:hover{
     border: 2px solid rgb(100, 100, 211);
 }
 .items img{
-    width: 100%;
+    width: 100% !important;
     height: 300px;
     border-radius: 20px 20px 0px 0px;
 }

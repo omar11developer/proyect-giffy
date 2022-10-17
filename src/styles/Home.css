@@ -1,13 +1,13 @@
 .optiones{
-    display: flex;
+  
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
+
 }
 .optiones form{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .optiones form input{
     width: 40%;
@@ -29,3 +29,4 @@
 .optiones form input:hover{
     border: 2px solid rgb(56, 125, 255);
 }
+
