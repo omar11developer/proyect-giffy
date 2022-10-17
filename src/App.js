@@ -1,6 +1,6 @@
 import { Link, Route } from "wouter";
 import Home from "./pages/Home";
-import Details from './components/Details'
+import Details from './pages/Details'
 import "./App.css";
 import { ListOfGifs } from "./components/ListOfGifs";
 import logo from "./logoGift.png";

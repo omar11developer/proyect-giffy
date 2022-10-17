@@ -1,7 +1,8 @@
-const Details = () => {
+const Details = ({params}) => {
+    const {id} = params
     return (
         <div>
-            djsfjk
+            {id}
         </div>
     )
 };

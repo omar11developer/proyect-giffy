@@ -1,4 +1,31 @@
 .optiones{
     display: flex;
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
+}
+.optiones form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.optiones form input{
+    width: 40%;
+    padding: 8px 8px;
+    font-size: large;
+    border-radius: 8px;
+    border: 2px solid rgba(56, 126, 255, 0);
+    background: #f2f2f2;
+    color: rgb(66, 66, 66);
+    outline: none;
+    transition: all ease .8s;
+}
+.optiones form input:focus{
+    border: 2px solid rgb(56, 125, 255);
+}
+.optiones form input:active{
+    border: 2px solid rgb(56, 125, 255);
+}
+.optiones form input:hover{
+    border: 2px solid rgb(56, 125, 255);
 }

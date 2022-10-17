@@ -6,7 +6,7 @@ export const Gif = ({ id, url, title }) => {
   return (
     <Fragment>
         <div className="items" key={id}>
-      <Link href={`/search/gift/${id}`} className="click-item">
+      <Link to={`/gif/${id}`} className="click-item">
           <img src={url} alt={title} />
           <h4>{title}</h4>
       </Link>
